@@ -1,6 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
-const webpack = require('webpack')
 
 module.exports = (env) => {
   process.env.NODE_ENV = process.env.NODE_ENV || 'development'

@@ -1,6 +1,5 @@
 module.exports = {
   setupFiles: [
-    'raf/polyfill',
     '<rootDir>/internals/testing/enzyme-setup.js',
   ],
   snapshotSerializers: [
