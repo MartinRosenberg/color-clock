@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "color": "#eeeeee",
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100vh",
+      "justifyContent": "center",
+      "width": "100vw",
+    }
+  }
+>
+  <h1>
+    18:00:00
+  </h1>
+  <h2>
+    #180000
+  </h2>
+</div>
+`;
