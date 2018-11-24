@@ -2,15 +2,16 @@ import 'normalize.css/normalize.css'
 
 import createHistory from 'history/createBrowserHistory'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { Router, Route, Switch } from 'react-router-dom'
+import { Route, Router, Switch } from 'react-router-dom'
 
-import { NotFoundPage } from './components/NotFound'
-import { configureStore } from './store/configure-store'
+import { NotFoundPage } from './components/NotFoundPage'
+import { configureStore } from './configure-store'
 
 const history = createHistory()
 const store = configureStore()
+const mountPoint = document.querySelector('#app')
 const app = (
   <Provider store={store}>
     <Router history={history}>
@@ -21,4 +22,4 @@ const app = (
   </Provider>
 )
 
-ReactDOM.render(app, document.querySelector('#app'))
+render(app, mountPoint)
