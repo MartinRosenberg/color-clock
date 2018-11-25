@@ -1,17 +1,19 @@
 import moment from 'moment'
 import React, { Component } from 'react'
 
-const getNewState = (time) => ({
-  color: time.format('#HHmmss'),
-  time: time.format('H:mm:ss'),
-})
+const getNewState = () => {
+  const time = moment()
+  return {
+    color: time.format('#HHmmss'),
+    time: time.format('H:mm:ss'),
+  }
+}
 
 export class App extends Component {
-  state = getNewState(moment())
+  state = getNewState()
 
   setClock = () => {
-    const time = moment()
-    this.setState(() => getNewState(time))
+    this.setState(() => getNewState())
     document.body.setAttribute('style', `background: ${this.state.color}`)
   }
 
