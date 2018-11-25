@@ -1,21 +1,17 @@
 import moment from 'moment'
 import React, { Component } from 'react'
 
-const time = moment()
-const defaultState = Object.freeze({
-  time: time.valueOf(),
+const getNewState = (time) => ({
   color: time.format('#HHmmss'),
+  time: time.format('H:mm:ss'),
 })
 
 export class App extends Component {
-  state = defaultState
+  state = getNewState(moment())
 
   setClock = () => {
     const time = moment()
-    this.setState(() => ({
-      color: time.format('#HHmmss'),
-      time: time.valueOf(),
-    }))
+    this.setState(() => getNewState(time))
     document.body.setAttribute('style', `background: ${this.state.color}`)
   }
 
@@ -39,7 +35,7 @@ export class App extends Component {
         height: '100vh',
         width: '100vw',
       }}>
-        <h1>{moment(this.state.time).format('H:mm:ss')}</h1>
+        <h1>{this.state.time}</h1>
         <h2>{this.state.color}</h2>
       </div>
     )
