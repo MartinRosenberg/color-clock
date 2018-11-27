@@ -1,20 +1,13 @@
-import moment from 'moment'
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Helmet from 'react-helmet'
 
-const getNewState = () => {
-  const time = moment()
-  return {
-    color: time.format('#HHmmss'),
-    time: time.format('H:mm:ss'),
-  }
-}
+import { getNewState } from './utils'
 
 export class App extends Component {
   state = getNewState()
 
   setClock = () => {
     this.setState(() => getNewState())
-    document.body.setAttribute('style', `background: ${this.state.color}`)
   }
 
   componentDidMount () {
@@ -28,18 +21,23 @@ export class App extends Component {
 
   render () {
     return (
-      <div style={{
-        alignItems: 'center',
-        color: '#eeeeee',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        height: '100vh',
-        width: '100vw',
-      }}>
-        <h1>{this.state.time}</h1>
-        <h2>{this.state.color}</h2>
-      </div>
+      <Fragment>
+        <Helmet>
+          <body style={`background: ${this.state.color}`}/>
+        </Helmet>
+        <div style={{
+          alignItems: 'center',
+          color: '#eeeeee',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          height: '100vh',
+          width: '100vw',
+        }}>
+          <h1>{this.state.time}</h1>
+          <h2>{this.state.color}</h2>
+        </div>
+      </Fragment>
     )
   }
 }
