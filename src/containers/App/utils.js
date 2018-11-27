@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-export const getNewState = () => {
+export const getColorAndFormattedTime = () => {
   const time = moment()
   return {
     color: time.format('#HHmmss'),
