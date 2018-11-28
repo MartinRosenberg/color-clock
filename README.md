@@ -1,11 +1,11 @@
-# React-Hex-Clock
+# Color Clock
 
 ## Try it locally
 
 1. Run:
     ```bash
-    $ git clone https://github.com/MartinRosenberg/React-Hex-Clock.git
-    $ cd React-Hex-Clock
+    $ git clone https://github.com/MartinRosenberg/Color-Clock.git
+    $ cd Color-Clock
     $ yarn
     $ yarn start:dev
     ```

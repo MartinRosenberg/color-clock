@@ -1,6 +1,6 @@
 {
-  "name": "react-hex-clock",
-  "version": "0.1.9",
+  "name": "color-clock",
+  "version": "0.1.10",
   "main": "src/index.jsx",
   "author": "Martin Rosenberg",
   "private": true,
