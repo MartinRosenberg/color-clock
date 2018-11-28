@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App container should render correctly 1`] = `
+<Fragment>
+  <Body
+    color="#180000"
+  />
+  <Clock
+    color="#180000"
+    time="18:00:00"
+  />
+</Fragment>
+`;

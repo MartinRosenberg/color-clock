@@ -1,14 +1,16 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 
-import { App } from '../index'
+import { App } from '..'
 
-beforeEach(() => {
-  // Moment uses `Date` internally, so overwriting `Date.now` is a simple mock
-  Date.now = jest.fn(() => 0)
-})
+describe('App container', () => {
+  beforeEach(() => {
+    // Moment uses `Date` internally, so overwriting `Date.now` is a simple mock
+    Date.now = jest.fn(() => 0)
+  })
 
-test('App should render correctly', () => {
-  const wrapper = shallow(<App/>)
-  expect(wrapper).toMatchSnapshot()
+  test('should render correctly', () => {
+    const wrapper = shallow(<App/>)
+    expect(wrapper).toMatchSnapshot()
+  })
 })
