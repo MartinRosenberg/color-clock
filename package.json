@@ -1,6 +1,6 @@
 {
   "name": "react-hex-clock",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "src/index.jsx",
   "author": "Martin Rosenberg",
   "private": true,
