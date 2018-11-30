@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 export const Body = ({ color }) => (
   <Helmet>
-    <body style={`background: ${color}`}/>
+    <body style={`background: ${color}; transition: background 250ms;`}/>
   </Helmet>
 )
 
