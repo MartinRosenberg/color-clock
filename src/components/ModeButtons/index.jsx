@@ -2,18 +2,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { Modes } from '../../containers/App/constants'
-import { style } from './constants'
+import { Button } from './Button'
 
 export const ModeButtons = ({ handleSetMode }) =>
   <div>
     {Object.values(Modes).map((mode) =>
-      <button
+      <Button
         key={mode.value}
         onClick={() => handleSetMode(mode.value)}
-        style={style}
       >
         {mode.name}
-      </button>
+      </Button>
     )}
   </div>
 

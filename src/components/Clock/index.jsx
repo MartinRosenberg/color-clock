@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { style } from './constants'
+import { Box } from './Box'
+import { H1 } from './H1'
 
 export const Clock = ({ color, time }) => (
-  <div style={style}>
-    <h1 style={{ margin: 0 }}>{time}</h1>
+  <Box>
+    <H1>{time}</H1>
     <h2>{color}</h2>
-  </div>
+  </Box>
 )
 
 Clock.propTypes = {

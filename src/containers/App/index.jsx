@@ -4,8 +4,8 @@ import { Body } from '../../components/Body'
 import { Clock } from '../../components/Clock'
 import { ModeButtons } from '../../components/ModeButtons'
 import { defaultMode } from './constants'
+import { Content } from './Content'
 import { getColorAndTime } from './utils'
-import { Content } from '../../components/Content'
 
 export class App extends Component {
   state = {
