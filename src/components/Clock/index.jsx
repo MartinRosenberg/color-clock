@@ -5,7 +5,7 @@ import { style } from './constants'
 
 export const Clock = ({ color, time }) => (
   <div style={style}>
-    <h1>{time}</h1>
+    <h1 style={{ margin: 0 }}>{time}</h1>
     <h2>{color}</h2>
   </div>
 )

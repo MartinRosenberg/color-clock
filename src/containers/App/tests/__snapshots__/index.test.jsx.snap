@@ -5,9 +5,14 @@ exports[`App container should render correctly 1`] = `
   <Body
     color="#180000"
   />
-  <Clock
-    color="#180000"
-    time="18:00:00"
-  />
+  <Content>
+    <Clock
+      color="#180000"
+      time="18:00:00"
+    />
+    <ModeButtons
+      handleSetMode={[Function]}
+    />
+  </Content>
 </Fragment>
 `;
