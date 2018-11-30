@@ -16,4 +16,6 @@
 - [x] Manage body background with [React Helmet](https://github.com/nfl/react-helmet)
 - [x] Split into smart and dumb components
 - [x] Switch to [Reach Router](https://github.com/reach/router)
-- [ ] Add other color modes
+- [x] Add other color modes
+- [ ] Adjust text color to contrast with background
+- [ ] Simplify styling with [Styled Components](https://github.com/styled-components/styled-components)

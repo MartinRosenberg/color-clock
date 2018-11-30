@@ -1,21 +1,26 @@
 import React, { Component, Fragment } from 'react'
 
-import { getColorAndFormattedTime } from './utils'
 import { Body } from '../../components/Body'
 import { Clock } from '../../components/Clock'
+import { ModeButtons } from '../../components/ModeButtons'
+import { defaultMode } from './constants'
+import { getColorAndTime } from './utils'
+import { Content } from '../../components/Content'
 
 export class App extends Component {
   state = {
-    ...getColorAndFormattedTime(),
-    ticker: null
+    ...getColorAndTime(defaultMode),
+    mode: defaultMode,
+    ticker: null,
   }
 
-  tick = () => {
-    this.setState(() => getColorAndFormattedTime())
+  handleSetMode = (mode) => {
+    this.setState(() => ({ ...getColorAndTime(mode), mode }))
   }
 
   componentDidMount () {
-    this.setState(() => ({ ticker: setInterval(this.tick, 1000) }))
+    const tick = () => this.setState(() => getColorAndTime(this.state.mode))
+    this.setState(() => ({ ticker: setInterval(tick, 1000) }))
   }
 
   componentWillUnmount () {
@@ -27,7 +32,10 @@ export class App extends Component {
     return (
       <Fragment>
         <Body color={color}/>
-        <Clock color={color} time={time}/>
+        <Content>
+          <Clock color={color} time={time}/>
+          <ModeButtons handleSetMode={this.handleSetMode}/>
+        </Content>
       </Fragment>
     )
   }

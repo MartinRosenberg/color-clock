@@ -4,17 +4,18 @@ exports[`Clock component should render correctly 1`] = `
 <div
   style={
     Object {
-      "alignItems": "center",
       "color": "#eeeeee",
-      "display": "flex",
-      "flexDirection": "column",
-      "height": "100vh",
-      "justifyContent": "center",
-      "width": "100vw",
+      "textAlign": "center",
     }
   }
 >
-  <h1>
+  <h1
+    style={
+      Object {
+        "margin": 0,
+      }
+    }
+  >
     12:34:56
   </h1>
   <h2>
