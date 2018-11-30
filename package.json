@@ -1,6 +1,6 @@
 {
   "value": "color-clock",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "src/index.jsx",
   "author": "Martin Rosenberg",
   "private": true,
@@ -29,7 +29,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
