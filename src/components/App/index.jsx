@@ -15,12 +15,12 @@ export class App extends Component {
   }
 
   handleSetMode = (mode) => {
-    this.setState(() => ({ ...getColorAndTime(mode), mode }))
+    this.setState({ ...getColorAndTime(mode), mode })
   }
 
   componentDidMount () {
-    const tick = () => this.setState(() => getColorAndTime(this.state.mode))
-    this.setState(() => ({ ticker: setInterval(tick, 1000) }))
+    const tick = () => this.setState(getColorAndTime(this.state.mode))
+    this.setState({ ticker: setInterval(tick, 1000) })
   }
 
   componentWillUnmount () {

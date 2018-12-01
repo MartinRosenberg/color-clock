@@ -5,11 +5,7 @@ const transition = 'color 250ms'
 
 export const ClockContainer = styled.div`
   text-align: center;
-  -webkit-transition: ${transition};
-     -moz-transition: ${transition};
-      -ms-transition: ${transition};
-       -o-transition: ${transition};
-          transition: ${transition};
+  transition: ${transition};
 `
 
 ClockContainer.propTypes = {
