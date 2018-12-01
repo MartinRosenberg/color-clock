@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const transition = 'color 250ms'
 
-export const Box = styled.div`
+export const ClockContainer = styled.div`
   color: ${props => props.color};
   text-align: center;
   -webkit-transition: ${transition};
@@ -13,6 +13,6 @@ export const Box = styled.div`
           transition: ${transition};
 `
 
-Box.propTypes = {
+ClockContainer.propTypes = {
   color: PropTypes.string.isRequired
 }

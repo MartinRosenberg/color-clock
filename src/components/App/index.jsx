@@ -1,10 +1,9 @@
 import React, { Component, Fragment } from 'react'
 
-import { Body } from '../../components/Body'
-import { Clock } from '../../components/Clock'
-import { ModeButtons } from '../../components/ModeButtons'
+import { Body } from './Body'
+import { Clock } from './Clock'
 import { defaultMode } from './constants'
-import { Content } from './Content'
+import { ModeButtons } from './ModeButtons'
 import { getColorAndTime } from './utils'
 
 export class App extends Component {
@@ -32,10 +31,8 @@ export class App extends Component {
     return (
       <Fragment>
         <Body color={color}/>
-        <Content>
-          <Clock color={color} time={time}/>
-          <ModeButtons handleSetMode={this.handleSetMode}/>
-        </Content>
+        <Clock color={color} time={time}/>
+        <ModeButtons handleSetMode={this.handleSetMode}/>
       </Fragment>
     )
   }

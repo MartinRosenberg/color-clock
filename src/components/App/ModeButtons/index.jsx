@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { Modes } from '../../containers/App/constants'
+import { Modes } from '../constants'
 import { Button } from './Button'
 
 export const ModeButtons = ({ handleSetMode }) =>

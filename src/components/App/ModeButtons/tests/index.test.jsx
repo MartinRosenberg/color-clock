@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 
-import { ModeButtons } from '../index'
+import { ModeButtons } from '..'
 
 let handleSetMode
 

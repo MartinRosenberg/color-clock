@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clock component should render correctly 1`] = `
+<Container__ClockContainer
+  color="#eee"
+>
+  <H1__ClockH1>
+    12:34:56
+  </H1__ClockH1>
+  <h2>
+    #123456
+  </h2>
+</Container__ClockContainer>
+`;

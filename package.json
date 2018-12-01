@@ -1,6 +1,6 @@
 {
   "value": "color-clock",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "src/index.jsx",
   "author": "Martin Rosenberg",
   "private": true,

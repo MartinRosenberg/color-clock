@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModeButtons component should render correctly 1`] = `
+<div>
+  <Button
+    key="simple"
+    onClick={[Function]}
+  >
+    Simple
+  </Button>
+  <Button
+    key="rent"
+    onClick={[Function]}
+  >
+    RENT
+  </Button>
+  <Button
+    key="sunrise"
+    onClick={[Function]}
+  >
+    Sunrise
+  </Button>
+  <Button
+    key="unix"
+    onClick={[Function]}
+  >
+    Unix
+  </Button>
+</div>
+`;
