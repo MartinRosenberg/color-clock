@@ -7,7 +7,7 @@
     git clone https://github.com/MartinRosenberg/Color-Clock.git
     cd Color-Clock
     yarn
-    yarn start:dev
+    yarn start
     ```
 2. Navigate to http://localhost:8080/
 
@@ -19,5 +19,6 @@
 - [x] Add other color modes
 - [x] Adjust text color to contrast with background
 - [x] Simplify styling with [Styled Components](https://github.com/styled-components/styled-components)
+- [x] Package and serve with [Parcel](https://github.com/parcel-bundler/parcel)
 - [ ] Make it prettier
 - [ ] Add routes for modes
