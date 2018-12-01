@@ -1,10 +1,6 @@
 import { Modes } from '../constants'
 import { getColorAndTime } from '../utils'
 
-beforeEach(() => {
-  Date.now = jest.fn(() => 0)
-})
-
 describe('getColorAndTime', () => {
   test('should return color and formatted time', () => {
     const res = getColorAndTime(Modes.simple.value)
