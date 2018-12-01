@@ -16,7 +16,7 @@ export const Modes = Object.freeze({
     getColor: (time) => {
       const secOfDay = time.diff(time.clone().startOf('day'), 'seconds')
       return `#${getHex(6)(secOfDay * 194.18298)}`
-    }
+    },
   },
   sunset: {
     name: 'Sunset',
@@ -34,7 +34,7 @@ export const Modes = Object.freeze({
     name: 'Unix',
     value: 'unix',
     message: 'Ha! You fell right into my trap, Vernor Vinge!',
-    getColor: (time) => `#${getHex(6)(time.valueOf() % 16777215)}`
+    getColor: (time) => `#${getHex(6)(time.valueOf() % 16777215)}`,
   },
 })
 

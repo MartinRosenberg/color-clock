@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { createGlobalStyle } from 'styled-components'
 import Color from 'color'
+import PropTypes from 'prop-types'
+import { createGlobalStyle } from 'styled-components'
 
 export const Body = createGlobalStyle`
   body {

@@ -9,5 +9,5 @@ export const ClockContainer = styled.div`
 `
 
 ClockContainer.propTypes = {
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 }
