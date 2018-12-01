@@ -17,7 +17,7 @@ describe('getColorAndTime', () => {
   const testCases = [
     { mode: Modes.simple, color: '#180000' },
     { mode: Modes.rent, color: '#c00091' },
-    { mode: Modes.sunrise, color: '#c80000' },
+    { mode: Modes.sunset, color: '#c80000' },
     { mode: Modes.unix, color: '#000000' },
   ]
   testCases.map(({ mode, color }) => {

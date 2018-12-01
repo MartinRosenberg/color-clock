@@ -2,7 +2,8 @@ import React, { Component, Fragment } from 'react'
 
 import { Body } from './Body'
 import { Clock } from './Clock'
-import { defaultMode } from './constants'
+import { defaultMode, Modes } from './constants'
+import { Message } from './Message'
 import { Mode } from './Mode'
 import { getColorAndTime } from './utils'
 
@@ -27,12 +28,13 @@ export class App extends Component {
   }
 
   render () {
-    const { color, time } = this.state
+    const { color, mode, time } = this.state
     return (
       <Fragment>
         <Body color={color}/>
         <Clock color={color} time={time}/>
         <Mode handleSetMode={this.handleSetMode}/>
+        <Message>{Modes[mode].message}</Message>
       </Fragment>
     )
   }

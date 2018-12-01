@@ -9,8 +9,11 @@ exports[`App container should render correctly 1`] = `
     color="#180000"
     time="18:00:00"
   />
-  <ModeButtons
+  <Mode
     handleSetMode={[Function]}
   />
+  <Message>
+    Just the facts, ma'am.
+  </Message>
 </Fragment>
 `;
