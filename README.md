@@ -19,4 +19,5 @@
 - [x] Add other color modes
 - [x] Adjust text color to contrast with background
 - [x] Simplify styling with [Styled Components](https://github.com/styled-components/styled-components)
-- [ ] Make it pretty
+- [ ] Make it prettier
+- [ ] Add routes for modes
