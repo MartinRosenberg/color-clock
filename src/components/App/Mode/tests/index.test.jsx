@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 
-import { ModeButtons } from '..'
+import { Mode } from '..'
 
 let handleSetMode
 
@@ -9,9 +9,9 @@ beforeEach(() => {
   handleSetMode = jest.fn()
 })
 
-describe('ModeButtons component', () => {
+describe('Mode component', () => {
   test('should render correctly', () => {
-    const wrapper = shallow(<ModeButtons handleSetMode={handleSetMode}/>)
+    const wrapper = shallow(<Mode handleSetMode={handleSetMode}/>)
     expect(wrapper).toMatchSnapshot()
   })
 })

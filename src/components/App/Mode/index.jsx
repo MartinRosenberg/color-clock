@@ -2,20 +2,20 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { Modes } from '../constants'
-import { Button } from './Button'
+import { ModeButton } from './Button'
 
-export const ModeButtons = ({ handleSetMode }) =>
+export const Mode = ({ handleSetMode }) =>
   <div>
     {Object.values(Modes).map((mode) =>
-      <Button
+      <ModeButton
         key={mode.value}
         onClick={() => handleSetMode(mode.value)}
       >
         {mode.name}
-      </Button>
+      </ModeButton>
     )}
   </div>
 
-ModeButtons.propTypes = {
+Mode.propTypes = {
   handleSetMode: PropTypes.func.isRequired
 }
