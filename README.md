@@ -17,5 +17,6 @@
 - [x] Split into smart and dumb components
 - [x] Switch to [Reach Router](https://github.com/reach/router)
 - [x] Add other color modes
-- [ ] Adjust text color to contrast with background
-- [ ] Simplify styling with [Styled Components](https://github.com/styled-components/styled-components)
+- [x] Adjust text color to contrast with background
+- [x] Simplify styling with [Styled Components](https://github.com/styled-components/styled-components)
+- [ ] Make it pretty
