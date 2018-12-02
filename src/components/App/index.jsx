@@ -14,7 +14,8 @@ export class App extends Component {
     ticker: null,
   }
 
-  handleSetMode = (mode) => {
+  handleSetMode = (event) => {
+    const mode = event.currentTarget.id
     this.setState({ ...getColorAndTime(mode), mode })
   }
 

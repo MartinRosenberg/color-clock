@@ -8,8 +8,9 @@ export const Mode = ({ handleSetMode }) =>
   <div>
     {Object.values(Modes).map((mode) =>
       <ModeButton
+        id={mode.value}
         key={mode.value}
-        onClick={() => handleSetMode(mode.value)}
+        onClick={handleSetMode}
       >
         {mode.name}
       </ModeButton>
@@ -17,5 +18,5 @@ export const Mode = ({ handleSetMode }) =>
   </div>
 
 Mode.propTypes = {
-  handleSetMode: PropTypes.func.isRequired
+  handleSetMode: PropTypes.func.isRequired,
 }
