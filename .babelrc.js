@@ -5,6 +5,7 @@ module.exports = {
   ],
   "plugins": [
     "@babel/proposal-class-properties",
+    "grommet",
     "styled-components"
   ]
 }
