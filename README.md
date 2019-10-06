@@ -4,8 +4,8 @@
 
 1. Run:
     ```bash
-    git clone https://github.com/MartinRosenberg/Color-Clock.git
-    cd Color-Clock
+    git clone https://github.com/MartinRosenberg/color-clock.git
+    cd color-clock
     yarn
     yarn start
     ```
