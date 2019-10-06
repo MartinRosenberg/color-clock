@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist/prod & parcel build src/index.html --out-dir dist/prod --cache-dir dist/cache --detailed-report",
-    "clear-cache": "rimraf dist/cache",
+    "clear:cache": "rimraf dist/cache",
+    "clear:dist": "rimraf dist",
     "lint": "eslint src",
     "start": "cross-env NODE_ENV=development rimraf dist/dev & parcel src/index.html --out-dir dist/dev --cache-dir dist/cache",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js",
@@ -19,14 +20,15 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
     "@reach/router": "^1.2.1",
     "color": "^3.1.2",
     "dayjs": "^1.8.16",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "styled-components": "^4.4.0"
+    "react-dom": "^16.10.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
@@ -37,7 +39,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
-    "babel-plugin-styled-components": "^1.10.6",
+    "babel-plugin-emotion": "^10.0.21",
     "cross-env": "^6.0.3",
     "dotenv": "^8.1.0",
     "enzyme": "^3.10.0",

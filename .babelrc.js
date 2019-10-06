@@ -1,10 +1,10 @@
 module.exports = {
   "presets": [
     "@babel/env",
-    "@babel/react"
+    "@babel/react",
   ],
   "plugins": [
     "@babel/proposal-class-properties",
-    "styled-components"
+    "emotion",
   ]
 }

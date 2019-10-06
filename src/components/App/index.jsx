@@ -31,7 +31,7 @@ export class App extends Component {
     const { color, mode, time } = this.state
     return (
       <Fragment>
-        <Body color={color}/>
+        {/*<Body color={color}/>*/}
         <Clock color={color} time={time}/>
         <Mode handleSetMode={this.handleSetMode}/>
         <Message>{Modes[mode].message}</Message>
